@@ -2,9 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:background="@drawable/bg_gradient"
+    tools:context="${relativePackage}.${activityClass}" xmlns:app="http://schemas.android.com/apk/res/dev.jugo.nenocontroller">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="100dip"
         android:layout_height="50dip"
         android:layout_alignParentBottom="true"
@@ -150,5 +152,23 @@
             android:background="@drawable/channel7"
             android:contentDescription="@string/ContentDescription" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Speech"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <dev.jugo.view.PowerImageView
+        android:id="@+id/powerImageCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/cat"
+        app:auto_play="true" />
 
 </RelativeLayout>
